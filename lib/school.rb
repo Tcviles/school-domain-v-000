@@ -7,7 +7,11 @@ class School
   end
 
   def add_student(student, grade)
-    @roster[grade].push(student)
+    if @roster[grade]
+      @roster[grade].push(student)
+    else
+      @roster[grade]=[student]
+    end
   end
 
   def grade(grade)
