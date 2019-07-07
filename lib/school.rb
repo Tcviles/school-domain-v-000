@@ -22,5 +22,6 @@ class School
     @roster.sort.map do |k,v|
       @roster[k]=v.sort
     end
+    @roster
   end
 end
