@@ -19,6 +19,8 @@ class School
   end
 
   def sort
-    @roster.keys.sort
+    @roster.sort.map do |k,v|
+      @roster[k]=v.sort
+    end
   end
 end
